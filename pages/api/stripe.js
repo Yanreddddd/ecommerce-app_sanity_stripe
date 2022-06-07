@@ -46,8 +46,5 @@ export default async function handler(req, res) {
     } catch (err) {
       return res.status(err.statusCode || 500).json(err.message);
     }
-  } else {
-    return res.setHeader('Allow', 'POST');
- 
-  }
+  } 
 }
