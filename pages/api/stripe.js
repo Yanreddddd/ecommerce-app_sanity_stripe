@@ -8,7 +8,6 @@ export default async function handler(req, res) {
       const params = {
         submit_type: "pay",
         mode: "payment",
-        payment_method: "pm_card_visa",
         payment_method_types: ["card"],
         billing_address_collection: "auto",
         shipping_options: [
