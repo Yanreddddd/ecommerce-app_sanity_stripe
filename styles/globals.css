@@ -323,6 +323,9 @@ text-align: end;
   justify-content: center;
 
 }
+.icons:hover{
+  cursor: pointer;
+}
 .footer-container .icons{
   font-size: 30px;
   display: flex;
