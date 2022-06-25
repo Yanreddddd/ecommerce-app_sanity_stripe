@@ -43,7 +43,6 @@ export default async function handler(req, res) {
       const session = await stripe.checkout.sessions.create(params);
 
       res.status(200).json(session);
-      res.redirect(303, session.url);
     } catch (err) {
       return res.status(err.statusCode || 500).json(err.message);
     }
